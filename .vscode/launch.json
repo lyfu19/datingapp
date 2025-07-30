@@ -5,13 +5,26 @@
     "version": "0.2.0",
     "configurations": [
         {
+            "name": "C#: API Debug",
+            "type": "dotnet",
+            "request": "launch",
+            "projectPath": "${workspaceFolder}/API/API.csproj"
+        },
+        {
+            "name": ".NET Core Attach",
+            "type": "coreclr",
+            "request": "attach"
+        },
+        {
             "type": "chrome",
             "request": "launch",
-            "name": "Debug Vite + React App",
-            "url": "http://localhost:5173",
+            "name": "Debug Client App",
+            "url": "https://localhost:5173",
             "webRoot": "${workspaceFolder}/client/src",
             "sourceMaps": true,
-            "skipFiles": ["<node_internals>/**"]
+            "skipFiles": [
+                "<node_internals>/**"
+            ]
         }
     ]
 }

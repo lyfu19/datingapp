@@ -2,8 +2,13 @@ import { useEffect, useState } from 'react';
 import axios from 'axios';
 import './index.css';
 
+type Member = {
+  id: string;
+  displayName: string;
+};
+
 function App() {
-  const [members, setMembers] = useState([]);
+  const [members, setMembers] = useState<Member[]>([]);
 
   useEffect(() => {
     const fetchMembers = async () => {
