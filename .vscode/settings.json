@@ -1,13 +1,18 @@
 {
-    "editor.formatOnSave": true,
-    "editor.defaultFormatter": "esbenp.prettier-vscode",
-    "cSpell.words": [
-        "appsettings",
-        "daisyui",
-        "hmac",
-        "HMACSHA"
-    ],
-    "[csharp]": {
-        "editor.defaultFormatter": "ms-dotnettools.csharp"
-    }
+  "editor.formatOnSave": true,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.tabSize": 2, // 设置缩进宽度为 2 空格
+  "editor.insertSpaces": true, // 使用空格而不是 tab 字符
+  "editor.detectIndentation": false, // 禁用 VS Code 根据文件内容猜测缩进
+  "cSpell.words": [
+    "appsettings",
+    "creds",
+    "daisyui",
+    "hmac",
+    "HMACSHA",
+    "VITE"
+  ],
+  "[csharp]": {
+    "editor.defaultFormatter": "ms-dotnettools.csharp"
+  }
 }
